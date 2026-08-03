@@ -2,5 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+    <packages>
+      <package name="com.valuelabs.tests"/>
+      <package name="firsttest"/>
+      <package name="locators"/>
+      <package name="wait"/>
+      <package name="webdrivermethods"/>
+    </packages>
+  </test>
+</suite>
