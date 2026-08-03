@@ -26,7 +26,7 @@ public class xpath {
 	//xpath with text only not using any attribute
 	//driver.findElement(By.xpath("a[text()='Bestsellers']")).click();
 	//text
-	driver.findElement(By.xpath("//span[text()='© 1996-2026, Amazon.com, Inc. or its affiliates']")).isDisplayed();
+	driver.findElement(By.xpath("//span[contains(text(),'Amazon.com, Inc. or its affiliates')]")).isDisplayed();
 	driver.close();
 
 	}
