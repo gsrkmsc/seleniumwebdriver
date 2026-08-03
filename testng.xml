@@ -9,6 +9,7 @@
       <package name="locators"/>
       <package name="wait"/>
       <package name="webdrivermethods"/>
+      <package name="navigationalcommands"/>
     </packages>
   </test>
 </suite>
