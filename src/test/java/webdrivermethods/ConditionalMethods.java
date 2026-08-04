@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 import java.util.List;
 import java.util.Set;
-
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,12 +12,13 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.WebDriver;
 
 
-public class Coniditionalmethods {
+public class ConditionalMethods {
 	
 	@Test(priority=1)
 	public void conditionalmethods()
 	{
 		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //explicit wait
 		driver.manage().window().maximize();
 		driver.get("https://youtube.com");
 		//Is Displayed or not

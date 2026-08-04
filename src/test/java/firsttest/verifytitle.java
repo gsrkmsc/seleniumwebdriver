@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class verifytitle {
 
-    @Test
+    @Test(priority=1)
     public void verifyYouTubeTitle() {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
