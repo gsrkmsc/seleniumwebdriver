@@ -10,6 +10,8 @@
       <package name="wait"/>
       <package name="webdrivermethods"/>
       <package name="navigationalcommands"/>
+      <package name="checkboxesandalertspopups"/>
+      
     </packages>
   </test>
 </suite>
