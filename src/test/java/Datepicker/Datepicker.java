@@ -25,6 +25,7 @@ public class Datepicker {
 	driver.switchTo().frame(0);  //as index only one
 	
 	//using sendkeys
+	//java
 	
 	driver.findElement(By.xpath("//input[@id='datepicker']")).sendKeys("09/07/2026");
 	}
