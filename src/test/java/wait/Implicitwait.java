@@ -20,7 +20,7 @@ public class Implicitwait {
 	{
 		WebDriver driver=new ChromeDriver();
 		
-		WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(10)); //implicit wait declaration
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //implicit wait declaration
 		
 		
 		driver.get("https://www.valuelabs.com");
@@ -29,8 +29,8 @@ public class Implicitwait {
 		
 		//driver.findElement(By.xpath("//a[@class='nav-link']")).click();
 		
-		WebElement contactus = driver.findElement(By.xpath("//a[@class='nav-link']"));
-        contactus.click();
+		driver.findElement(By.xpath("//a[@class='nav-link']")).click();
+        
 		//driver.close(); //it will close driver instance
 	}
 

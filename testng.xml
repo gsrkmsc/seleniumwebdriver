@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<!DOCTYPE suite SYSTEM "https://testng.org">
+<!-- Updated: Added parallel and thread-count to the suite tag -->
+<suite name="Suite" parallel="classes" thread-count="5">
+  
+  <!-- Removed thread-count from here -->
+  <test name="Test">
     <parameter name="browser" value="chrome"/>
     <packages>
       <package name="com.valuelabs.tests"/>
@@ -11,7 +14,7 @@
       <package name="webdrivermethods"/>
       <package name="navigationalcommands"/>
       <package name="checkboxesandalertspopups"/>
-      
     </packages>
   </test>
+  
 </suite>

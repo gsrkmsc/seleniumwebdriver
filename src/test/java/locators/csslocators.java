@@ -19,7 +19,7 @@ public class csslocators {
 		driver.get("https://demoblaze.com/");
 		
 		//tag and id syntax: tag#id
-		//driver.findElement(By.cssSelector("input#nava")).click(); //css locator Tagname#id
+		driver.findElement(By.cssSelector("input#nava")).click(); //css locator Tagname#id
 		//driver.findElement(By.cssSelector("#nava")).click();   //css locator without tagname
 		
 		//tag class  syntax: tag.classname
