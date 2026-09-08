@@ -27,7 +27,7 @@ public class Slider {
 	    //capturing the x,y coordinates of the minimum slider
 		
 		WebElement min_slider = driver.findElement(By.xpath("//div[@class='price-range-block']//span[1]"));
-)
+
 	   
 	
 	
